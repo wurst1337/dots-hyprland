@@ -22,6 +22,9 @@ This is my dotfiles for **Hyprland, waybar, hyprlock and rofi**. Created to be e
 ## 〔 install 〕
 A really cool install script will be created in future, just wait =)
 
+> [!WARNING]
+> In dots many lines with personal info like a `/home/wurst137` path, you need to change them to your.
+
 If you really wants this dots - you can copy files manualy, all dots stored and [self-named directory](dots) in repository.
 
 ## 〔 license 〕
