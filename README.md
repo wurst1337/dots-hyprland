@@ -1,61 +1,28 @@
-# dots-hyprland
-My simple Hyprland and Waybar dots
+# 「 Nicomachean dotfiles 」
+This dots created to don't be ascetic, boring, slow and fat =)
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/5ce949d5-eb9e-411e-b1a4-83f97202aa27" />
+## 〔 overview 〕
+### What is it?
+This is my dotfiles for **Hyprland, waybar, hyprlock and rofi**. Created to be easy, lightweight, powerfull and minimalistic.
 
+### 〔 software 〕
+| Software | Description |
+| ---      | ----        |
+| Hyprland | The modern, easy and powerfull primary tiling compositor. |
+| Waybar  | Just a bar. |
+| Rofi    | A modern launcher for your apps. |
+| other    | please read the [thirdparty textfile](thirdparty.md). |
 
-## Demo video
-<video src="overall.mp4"></video>
+## 〔 screenshots 〕 
+|  |  |
+| ---      | ----        |
+| <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e4feb032-269b-4291-8bfe-cf015b514983" /> | <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/5efa652d-8d4b-4304-a47c-39443e43002b" /> |
+| <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/431471b9-b7ab-4cb6-a5ed-bfb35bdf173d" />  | <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e5492e25-285c-4767-9948-3f2834fec7bb" /> |
 
-## wallmk
-**wallmk** - is a simple script for auto-generating theme from wallpaper accent color using [`pywal`](https://github.com/dylanaraps/pywal) and `awww` (aka swww).
+## 〔 install 〕
+A really cool install script will be created in future, just wait =)
 
-Script is apply color scheme to:
-- kitty (just colors)
-- waybar (just colors)
-- hyprland (border colors)
+If you really wants this dots - you can copy files manualy, all dots stored and [self-named directory](dots) in repository.
 
-## Hyprland
-### Keybinds
-
-| Keybing | Description | Command |
-| ---     | ----        | ---     |
-| `Super`+`Enter` or `Super`+`T` | Run terminal | `exec, $terminal` |
-| `Super`+`Q` | Kill active window | `killactive` |
-| `Super`+`E` | Open file manager | `exec, $fileManager` |
-| `Super`+`W` | Open browser | `exec, $browser` |
-| `Super`+`G` | Toggle floating | `togglefloating` |
-| `Super`+`R` | Open launcher | `exec, $menu` |
-| `Super`+`P` | Toggle pseudo-mode | `pseudo` |
-| `Super`+`N` | Open notification center (`swaync`) | `exec, swaync-client -t -sw ` |
-| `Super`+`↑`,`↓`,`←`,`→` | Move focus  | - |
-| `Super`+`h`,`j`,`k`,`l` | Move focus (alt)  | - |
-| `Super`+`Ctrl`+`↑`,`↓`,`←`,`→` | Move focused window  | - |
-| `Super`+`Ctrl`+`h`,`j`,`k`,`l` | Move focus window (alt)  | - |
-| `Super`+`Shift`+`←`,`→` | Move to L and R workspaces  | - |
-| `Super`+`1`,`2`, `3`, ... `9`, `10` | Move to workspaces  | - |
-| `Super`+`Shift`+`1`,`2`, `3`, ... `9`, `10` | Move focused window to workspaces  | - |
-| `Super`+`V` | Open cliphist via rofi  | - |
-| `Super`+`Shift`+`S` | Open screenshot util  | - |
-| `Super`+`Shift`+`E` | Open screenshot util and edit via swappy  | - |
-| `Super`+`F` | Toggle fullscreen mode for focused window  | - |
-| `Super`+`Ctrl`+`Shift`+`←`,`→` | Move focused window to workspaces  | - |
-| `Super`+`Ctrl`+`Shift`+`h`,`l` | Move focused window to workspaces (alt)  | - |
-
-
-
-
-## Hypridle
-### Demo screenshot
-<img width="1270" height="720" alt="hyprlock_screenshot" src="https://github.com/user-attachments/assets/98694f1d-0378-4265-9131-f0d2c1a82506" />
-
-
-## Waybar
-Just a simple waybar config.
-### Screenshots
-<img width="1920" height="42" alt="image" src="https://github.com/user-attachments/assets/df5969fe-9f4f-41a2-89b2-cf96b348d45b" /> <br>
-<img width="1920" height="42" alt="image" src="https://github.com/user-attachments/assets/542a3db5-621f-4628-9d75-fc09983ebb5b" /> <br>
-<img width="1920" height="42" alt="image" src="https://github.com/user-attachments/assets/b5ca9095-767a-4088-93e9-ee3ac85b58c8" />
-
-## License
+## 〔 license 〕
 Dots is licensed under MIT License terms. More in [LICENSE](LICENSE) file.
