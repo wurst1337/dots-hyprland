@@ -1,0 +1,21 @@
+#!/bin/bash
+
+if [ -z "$1" ]; then
+    echo "Usage: wallmk /path/to/wallpaper.jpg"
+    exit 1
+fi
+
+IMG=$(realpath "$1")
+
+if [ ! -f "$IMG" ]; then
+    echo "Error: File $IMG not found."
+    exit 1
+fi
+
+wal -i "$IMG"
+awww img "$IMG" --transition-type outer --transition-pos 0.5,0.5 --transition-step 120 --transition-fps 120
+
+pkill waybar
+waybar > /dev/null 2>&1 &
+
+echo "Wallpaper and colors updated!"

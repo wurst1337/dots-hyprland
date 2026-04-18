@@ -1,13 +1,9 @@
 # 「 Nicomachean dotfiles 」
-This dots created to don't be ascetic, boring, slow and fat =)
+Minimalistic, powerfull, usable, lightweight dotfiles.
 
 ## 〔 overview 〕
 ### What is it?
 This is my dotfiles for **Hyprland, waybar, hyprlock and rofi**. Created to be easy, lightweight, powerfull and minimalistic.
-
-The dots now is on very early stage of development.
-
-My target now is making the dots for any people, because dots at this moment just mine copied configs. 
 
 ### 〔 software 〕
 | Software | Description |
@@ -38,6 +34,23 @@ My target now is making the dots for any people, because dots at this moment jus
 A really cool install script will be created in future, just wait =)
 
 If you really wants this dots - you can copy files manualy, all dots stored and [self-named directory](dots) in repository.
+
+### Arch
+Install script for archlinux on alpha-stage is ready!
+
+#### Basic install
+```bash
+mkdir dots && cd dots
+cd dots-hyprland
+chmod +x install.sh
+./install.sh
+```
+
+#### After install
+**Warning!**: Don't forget to run `wallmk` to generate themes:
+```bash
+wallmk /path/to/your/wallpaper
+```
 
 ## 〔 license 〕
 Dots is licensed under MIT License terms. More in [LICENSE](LICENSE) file.
