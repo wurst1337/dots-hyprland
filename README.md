@@ -5,6 +5,10 @@ This dots created to don't be ascetic, boring, slow and fat =)
 ### What is it?
 This is my dotfiles for **Hyprland, waybar, hyprlock and rofi**. Created to be easy, lightweight, powerfull and minimalistic.
 
+The dots now is on very early stage of development.
+
+My target now is making the dots for any people, because dots at this moment just mine copied configs. 
+
 ### 〔 software 〕
 | Software | Description |
 | ---      | ----        |
@@ -21,19 +25,20 @@ This is my dotfiles for **Hyprland, waybar, hyprlock and rofi**. Created to be e
 
 ## 〔 features 〕
 - 🤏🏻 **Slim** - Really slim config withn't a weight-performance ass like a blur and 320kg of animations. Good for end-pc (like mine).
-- ⚡ **Easy** - Just a text with a variables.
 - 🎨 **Auto theme generation** - You can generate color themes from wallpaper using easy self-writed `wallmk` script which uses `pywal`.
 - 💡 **Design** - Design created by self-writen standarts and referenced to a KISS philosophy.
 - 🌊 **Usability** - Minium of ascetic, maximum of usablility out the box.
 
 
 ## 〔 install 〕
-A really cool install script will be created in future, just wait =)
 
 > [!WARNING]
-> In dots many lines with personal info like a `/home/wurst137` path, you need to change them to your.
+> Installer script for Arch Linux will be soon! Just more patience.
+
+A really cool install script will be created in future, just wait =)
 
 If you really wants this dots - you can copy files manualy, all dots stored and [self-named directory](dots) in repository.
 
 ## 〔 license 〕
 Dots is licensed under MIT License terms. More in [LICENSE](LICENSE) file.
+
