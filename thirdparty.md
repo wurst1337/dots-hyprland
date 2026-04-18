@@ -16,3 +16,38 @@ In this file specified a list of third-party software, which didn't (and is) wri
 ## Other
 - Put here a lot of popular things like a fastfetch and cava.
 - And many basical tools like a `brighnessctl` and `pavucontrol`.
+
+### Minium
+At this moment, this is minium then I can specified:
+- sddm
+-     hyprland
+-     hyprlock
+-     hypridle
+-     kitty
+-     rofi
+-     awww
+-     python
+-     python-pywal
+-     swaync
+-     grim
+-     swappy
+-     slurp
+-     waybar
+-     brightnessctl
+-     dolphin
+-     papirus-icon-theme
+-     fish
+-     starship
+-     hyprsunset
+-     cava
+-     networkmanager
+-     pipewire
+-     wireplumber
+-     pipewire-audio
+-     libpipewire
+-     pipewire-pulse
+-     pipewire-alsa
+-     pipewire-jack
+-     gst-plugin-pipewire
+-     cliphist
+-     wl-clipboard
