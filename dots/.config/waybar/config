@@ -1,0 +1,123 @@
+{
+    "height": 30,
+    "spacing": 4,
+    "margin-top": 5,
+    "margin-left": 15,
+    "margin-right": 15,
+    "modules-left": [
+        "custom/launc",
+        "hyprland/window"
+    ],
+    "modules-center": [
+        "hyprland/workspaces"
+    ],
+    "modules-right": [
+        "mpris",
+        "pulseaudio",
+        "hyprland/language",
+        "network",
+        "clock",
+        "tray"
+    ],
+    "hyprland/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "warp-on-scroll": true,
+        "show-only-indicated": false,
+        "format": "{icon}",
+        "format-icons": {
+            "1": "Ⅰ",
+            "2": "Ⅱ",
+            "3": "Ⅲ",
+            "4": "Ⅳ",
+            "5": "Ⅴ",
+            "6": "Ⅵ",
+            "7": "Ⅶ",
+            "8": "Ⅷ",
+            "9": "Ⅸ",
+            "10": "Ⅹ",
+            "urgent": "",
+            "focused": "",
+            "default": ""
+        },
+        "persistent-workspaces": {
+        "*": 5
+        }
+    },
+    "hyprland/window": {
+        "format": "{}",
+        "max-length": 35
+    },
+    "hyprland/language": {
+        "format": "  {}",
+        "format-en": "EN",
+        "format-ru": "RU",
+        "on-click": "hyprctl switchxkblayout current next"
+    },
+    "keyboard-state": {
+        "numlock": true,
+        "capslock": true,
+        "format": "{name} {icon}",
+        "format-icons": {
+            "locked": "",
+            "unlocked": ""
+        }
+    },
+    "mpris": {
+	    "format": "{player_icon} {dynamic}",
+        "on-click": "playerctl play-pause",
+	    "format-paused": "{status_icon} <i>{dynamic}</i>",
+        "max-length": 30,
+	    "player-icons": {
+	    	"default": "▶",
+	    	"spotify": "",
+	    	"firefox": ""
+	    },
+	    "status-icons": {
+	    	"paused": "⏸"
+	}
+    },
+    "tray": {
+        "icon-size": 18,
+        "spacing": 10
+    },
+    "clock": {
+        "format": " {:%H:%M}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%Y-%m-%d}"
+    },
+    "network": {
+        "format-wifi": "{essid} ({signalStrength}%) ",
+        "format-ethernet": "󰈀 Ethernet",
+        "tooltip-format": "{ifname} - {gwaddr}",
+        "format-linked": "{ifname} (No IP) ",
+        "format-disconnected": "Disconnected ⚠",
+        "format-alt": "{ipaddr}",
+        "max-length": 15
+    },
+    "pulseaudio": {
+        "scroll-step": 5,
+        "format": "{icon} {volume}% ",
+        "format-bluetooth": "{volume}% {icon} {format_source}",
+        "format-bluetooth-muted": " {icon} {format_source}",
+        "format-muted": " {format_source}",
+        "format-source": "{volume}% ",
+        "format-source-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol"
+    },
+    "custom/launc": {
+    "format": "",
+    "on-click": "rofi -show drun",
+    "on-click-right": "pkill alacritty",
+    "tooltip": false
+}
+}

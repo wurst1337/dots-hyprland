@@ -1,0 +1,78 @@
+@import "~/.cache/wal/colors-rofi-dark.rasi"
+
+* {
+    bg-solid:        @background; 
+    bg-gray:         @color1;
+    fg-white:        @foreground;  
+    border-dark:     @color8;      
+    border-light:    @color6;
+    accent-color:    white;
+    
+    background-color: transparent;
+    text-color:       @fg-white;
+    font:            "JetBrains Mono 11";
+}
+
+window {
+    background-color: @bg-solid;
+    border:           2px;
+    border-radius:    3px;
+    border-color:     @border-light;
+    width:            600px;
+    padding:          10px;
+}
+
+mainbox {
+    children: [ inputbar, listview ];
+    spacing: 10px;
+}
+
+inputbar {
+    background-color: @bg-solid;
+    border:           2px;
+    border-radius:    3px;
+    border-color:     @border-dark;
+    padding:          8px 12px;
+    children:         [ prompt, entry ];
+}
+
+prompt {
+    text-color: @border-light;
+    margin: 0px 10px 0px 0px;
+}
+
+entry {
+    placeholder: "Search...";
+    placeholder-color: @color8;
+    text-color: @foreground;
+}
+
+listview {
+    fixed-height: 0;
+    scrollbar:    false;
+    spacing:      5px;
+    lines:        10;
+}
+
+element {
+    padding:       8px;
+    border-radius: 3px;
+    border:        2px;
+    border-color:  transparent;
+}
+
+element normal.normal, element alternate.normal {
+    background-color: @bg-solid;
+    text-color:       @fg-white;
+}
+
+element selected.normal {
+    background-color: @color1;    
+    text-color:       @color7;  
+    border-color:     @accent-color; 
+}
+
+element-icon {
+    size: 24px;
+    margin: 0 10px 0 0;
+}
