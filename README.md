@@ -2,6 +2,9 @@
 Minimalistic, slim, usable, lightweight dotfiles.
 
 ## 〔 overview 〕
+> [!WARNING]
+> At this moment, I'm enchanting the dots and making it for public. The config at same time maybe sounds raw.
+
 ### What is it?
 This is my dotfiles for **Hyprland, waybar, hyprlock and rofi**. Created to be easy, lightweight, powerfull and minimalistic.
 
@@ -9,9 +12,9 @@ This is my dotfiles for **Hyprland, waybar, hyprlock and rofi**. Created to be e
 | Software | Description |
 | ---      | ----        |
 | Hyprland | The modern, easy and powerfull primary tiling compositor. |
-| Waybar  | Just a bar. |
+| Waybar  | Bar. |
 | Rofi    | A modern launcher for your apps. |
-| other    | please read the [thirdparty textfile](thirdparty.md). |
+| other    | read the [thirdparty textfile](thirdparty.md). |
 
 ## 〔 screenshots 〕 
 |  |  |
@@ -49,6 +52,7 @@ Simple install script for **Arch Linux** is ready.
 ```bash
 sudo pacman -Syu && sudo pacman -S git
 mkdir dots && cd dots
+git clone https://github.com/wurst1337/dots-hyprland.git
 cd dots-hyprland
 chmod +x install.sh
 ./install.sh
@@ -65,4 +69,3 @@ wallmk /path/to/your/wallpaper.jpg
 
 ## 〔 license 〕
 Dots is licensed under MIT License terms. More in [LICENSE](LICENSE) file.
-
