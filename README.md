@@ -39,7 +39,7 @@ A really cool install script will be created in future, just wait =)
 
 If you really wants this dots - you can copy files manualy, all dots stored and [self-named directory](dots) in repository.
 
-Simple to install script for **Arch Linux** is ready.
+Simple install script for **Arch Linux** is ready.
 
 ### Arch
 > [!WARNING]
@@ -47,6 +47,7 @@ Simple to install script for **Arch Linux** is ready.
 
 #### Basic install
 ```bash
+sudo pacman -Syu && sudo pacman -S git
 mkdir dots && cd dots
 cd dots-hyprland
 chmod +x install.sh
