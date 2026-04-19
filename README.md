@@ -1,5 +1,5 @@
 # 「 Nicomachean dotfiles 」
-Minimalistic, powerfull, usable, lightweight dotfiles.
+Minimalistic, slim, usable, lightweight dotfiles.
 
 ## 〔 overview 〕
 ### What is it?
@@ -25,18 +25,25 @@ This is my dotfiles for **Hyprland, waybar, hyprlock and rofi**. Created to be e
 - 💡 **Design** - Design created by self-writen standarts and referenced to a KISS philosophy.
 - 🌊 **Usability** - Minium of ascetic, maximum of usablility out the box.
 
+### 〔 philosophy 〕
+| №  | Name                                     | Description                                                      | Why?  |
+| ---| ----                                     | -----                                                            | ----- |
+| 1  | Wallpaper is color, color is everything  | Use an accent color from wallpaper in Hyprland, waybar, rofi, etc.  | 1) It's beautiful, fast and convenient. <br> 2) It doesn't take time to manually edit each config. <br> 3) Makes everything a "unified system"
+| 2  | Balance of the universe |  Make a beatiful, but lightweight config.
+| 3  | Usability for first |  The config should be convenient for everyday use, with pleasure.
+
 
 ## 〔 install 〕
-
-> [!WARNING]
-> Installer script for Arch Linux will be soon! Just more patience.
 
 A really cool install script will be created in future, just wait =)
 
 If you really wants this dots - you can copy files manualy, all dots stored and [self-named directory](dots) in repository.
 
+Simple to install script for **Arch Linux** is ready.
+
 ### Arch
-Install script for archlinux on alpha-stage is ready!
+> [!WARNING]
+> Installer on an alpha-stage of development.
 
 #### Basic install
 ```bash
@@ -47,9 +54,12 @@ chmod +x install.sh
 ```
 
 #### After install
+> [!WARNING]
+> Generate themes.
+
 **Warning!**: Don't forget to run `wallmk` to generate themes:
 ```bash
-wallmk /path/to/your/wallpaper
+wallmk /path/to/your/wallpaper.jpg
 ```
 
 ## 〔 license 〕
