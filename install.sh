@@ -6,6 +6,7 @@ EXIT_REQUESTED=0
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 DOTS_CONFIG_SRC="$SCRIPT_DIR/dots/.config"
 WALLMK_SRC="$SCRIPT_DIR/dots/utils/wallmk"
+DEFWALL_SRC="$SCRIPT_DIR/dots/utils/defaultwallpaper.png"
 WALLMK_DEST="/usr/local/bin/wallmk"
 
 RED='\033[1;31m'
@@ -130,6 +131,7 @@ TASKS=(
     check_existing_configs
     copy_dotfiles
     install_wallmk
+    set_default_wallpaper
     post_install_actions
 )
 
@@ -172,6 +174,16 @@ install_wallmk() {
         sudo bash -c "cp '$WALLMK_SRC' '$WALLMK_DEST' && chmod +x '$WALLMK_DEST'"
 }
 
+set_default_wallpaper() {
+    if [[ ! -f "$DEFWALL_SRC" ]]; then
+        warn "default wallpaper not found: $DEFWALL_SRC"
+        return 1
+    fi
+
+    run_with_confirm "[REQUIRED] set default wallpaper via wallmk?" \
+        wallmk "$DEFWALL_SRC"
+}
+
 post_install_actions() {
     echo
     success "Installation complete!"
@@ -203,7 +215,7 @@ main() {
     check_not_root
 
     echo
-    info "=== Hyprland Dotfiles Installer for Arch Linux ==="
+    info "=== Hyprland Dotfiles by wurst1337 Installer for Arch Linux ==="
     info "You will be prompted before each action."
     echo
 
