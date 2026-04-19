@@ -124,6 +124,12 @@ PACMAN_PACKAGES=(
     gst-plugin-pipewire
     cliphist
     wl-clipboard
+    playerctl
+    libnotify
+    pavucontrol
+    firefox
+    xdg-desktop-portal-hyprland
+    ttf-jetbrains-mono-nerd
 )
 
 TASKS=(

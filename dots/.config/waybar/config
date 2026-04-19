@@ -54,15 +54,6 @@
         "format-ru": "RU",
         "on-click": "hyprctl switchxkblayout current next"
     },
-    "keyboard-state": {
-        "numlock": true,
-        "capslock": true,
-        "format": "{name} {icon}",
-        "format-icons": {
-            "locked": "",
-            "unlocked": ""
-        }
-    },
     "mpris": {
 	    "format": "{player_icon} {dynamic}",
         "on-click": "playerctl play-pause",

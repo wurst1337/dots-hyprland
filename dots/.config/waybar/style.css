@@ -1,6 +1,6 @@
 /* dots by wurst1337 (https://github.com/wurst1337/dots-hyprland) */
-/* (sorry for many shit here, I will remove in future) */
 
+/* Import styles */
 @import "../../.cache/wal/colors-waybar.css";
 
 * {
@@ -10,13 +10,13 @@
 
 window#waybar {
     /* background: linear-gradient(rgb(20, 20, 20), rgb(34, 34, 34));  */
-    /* border-bottom: 2px solid rgb(25, 25, 25);  */
+    border-bottom: 2px solid rgb(25, 25, 25);
     color: #ffffff;
     transition-property: background-color;
     transition-duration: .5s;
     border-radius: 15px;
     margin: 15px;
-    /* background-color: rgba(27, 27, 27, 0.5);  */
+    background-color: rgba(27, 27, 27, 0.5); 
 }
 
 window#waybar.hidden {
