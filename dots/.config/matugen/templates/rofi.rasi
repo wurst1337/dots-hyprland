@@ -1,0 +1,104 @@
+/* rofi.rasi - Matugen base16 pywal-like */
+
+* {
+    foreground:       {{base16.base05.default.hex}};
+    background:       {{base16.base00.default.hex}};
+    cursor:           {{base16.base05.default.hex}};
+
+    color0:           {{base16.base00.default.hex}};
+    color1:           {{base16.base08.default.hex}};
+    color2:           {{base16.base0b.default.hex}};
+    color3:           {{base16.base0a.default.hex}};
+    color4:           {{base16.base0d.default.hex}};
+    color5:           {{base16.base0e.default.hex}};
+    color6:           {{base16.base0c.default.hex}};
+    color7:           {{base16.base05.default.hex}};
+    color8:           {{base16.base03.default.hex}};
+    color9:           {{base16.base08.default.hex}};
+    color10:          {{base16.base0b.default.hex}};
+    color11:          {{base16.base0a.default.hex}};
+    color12:          {{base16.base0d.default.hex}};
+    color13:          {{base16.base0e.default.hex}};
+    color14:          {{base16.base0c.default.hex}};
+    color15:          {{base16.base05.default.hex}};
+
+    bg-solid:         @background;
+    bg-gray:          @color1;
+    fg-white:         @foreground;
+    border-dark:      @color8;
+    border-light:     @color6;
+    accent-color:     @foreground;
+
+    background-color: transparent;
+    text-color:       @fg-white;
+    font:             "JetBrains Mono 11";
+}
+
+window {
+    background-color: @bg-solid;
+    border:           2px;
+    border-radius:    3px;
+    border-color:     @border-light;
+    width:            600px;
+    padding:          10px;
+}
+
+mainbox {
+    children:         [ inputbar, listview ];
+    spacing:          10px;
+}
+
+inputbar {
+    background-color: @bg-solid;
+    border:           2px;
+    border-radius:    3px;
+    border-color:     @border-dark;
+    padding:          8px 12px;
+    children:         [ prompt, entry ];
+}
+
+prompt {
+    text-color:       @border-light;
+    margin:           0px 10px 0px 0px;
+}
+
+entry {
+    placeholder:       "Search...";
+    placeholder-color: @color8;
+    text-color:        @foreground;
+}
+
+listview {
+    fixed-height:     0;
+    scrollbar:        false;
+    spacing:          5px;
+    lines:            10;
+}
+
+element {
+    padding:          8px;
+    border-radius:    3px;
+    border:           2px;
+    border-color:     transparent;
+}
+
+element normal.normal,
+element alternate.normal {
+    background-color: @bg-solid;
+    text-color:       @fg-white;
+}
+
+element selected.normal {
+    background-color: @color2;
+    text-color:       @color15;
+    border-color:     @accent-color;
+}
+
+element-icon {
+    size:             24px;
+    margin:           0 10px 0 0;
+}
+
+element-text {
+    text-color:       inherit;
+}

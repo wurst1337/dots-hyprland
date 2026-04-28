@@ -12,10 +12,12 @@ if [ ! -f "$IMG" ]; then
     exit 1
 fi
 
-wal -i "$IMG"
+
+matugen image "$IMG"
+
 awww img "$IMG" --transition-type outer --transition-pos 0.5,0.5 --transition-step 120 --transition-fps 120
 
 pkill waybar
 waybar > /dev/null 2>&1 &
 
-echo "Wallpaper and colors updated!"
+notify-send "Matugen colors applied to GTK, Qt and System!"

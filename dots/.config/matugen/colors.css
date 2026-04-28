@@ -1,0 +1,26 @@
+/* colors-waybar.css - pywal-like matugen */
+
+@define-color foreground {{colors.on_surface.default.hex}};
+@define-color background {{colors.surface.default.hex}};
+@define-color cursor {{colors.on_surface.default.hex}};
+
+@define-color color0 {{colors.surface.default.hex}};
+
+/* muted / dark ANSI colors */
+@define-color color1 {{colors.outline_variant.default.hex}};
+@define-color color2 {{colors.surface_variant.default.hex}};
+@define-color color3 {{colors.outline.default.hex}};
+@define-color color4 {{colors.primary.default.hex}};
+@define-color color5 {{colors.secondary.default.hex}};
+@define-color color6 {{colors.tertiary.default.hex}};
+@define-color color7 {{colors.on_surface.default.hex}};
+
+/* bright colors, pywal-style: mostly repeats / slightly brighter */
+@define-color color8 {{colors.outline.default.hex}};
+@define-color color9 {{colors.outline_variant.default.hex}};
+@define-color color10 {{colors.surface_variant.default.hex}};
+@define-color color11 {{colors.outline.default.hex}};
+@define-color color12 {{colors.primary.default.hex}};
+@define-color color13 {{colors.secondary.default.hex}};
+@define-color color14 {{colors.tertiary.default.hex}};
+@define-color color15 {{colors.on_surface.default.hex}};

@@ -6,19 +6,38 @@
     "margin-right": 15,
     "modules-left": [
         "custom/launcher",
-        "hyprland/window"
+        "group/hardware",
+        "mpris"
     ],
     "modules-center": [
         "hyprland/workspaces"
     ],
     "modules-right": [
-        "mpris",
-        "pulseaudio",
-        "hyprland/language",
-        "network",
         "clock",
-        "tray"
+        "group/tray",
+        "custom/logout"
     ],
+    "group/hardware": {
+        "orientation": "horizontal",
+        "modules": [
+            "cpu",
+            "temperature",
+            "memory"
+        ]
+    },
+    "group/tray": {
+        "orientation": "inherit",
+        "drawer": {
+            "transition-duration": 500,
+            "children-class": "not-tray",
+            "transition-left-to-right": false,
+            "click-to-reveal": true
+        },
+        "modules": [
+            "custom/tray-icon",
+            "tray"
+        ]
+    },
     "hyprland/workspaces": {
         "disable-scroll": true,
         "all-outputs": true,
@@ -44,21 +63,11 @@
         "*": 5
         }
     },
-    "hyprland/window": {
-        "format": "{}",
-        "max-length": 35
-    },
-    "hyprland/language": {
-        "format": "  {}",
-        "format-en": "EN",
-        "format-ru": "RU",
-        "on-click": "hyprctl switchxkblayout current next"
-    },
     "mpris": {
 	    "format": "{player_icon} {dynamic}",
         "on-click": "playerctl play-pause",
 	    "format-paused": "{status_icon} <i>{dynamic}</i>",
-        "max-length": 30,
+        "max-length": 25,
 	    "player-icons": {
 	    	"default": "▶",
 	    	"spotify": "",
@@ -74,21 +83,12 @@
     },
     "clock": {
         "format": " {:%H:%M}",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%Y-%m-%d}"
-    },
-    "network": {
-        "format-wifi": "{essid} ({signalStrength}%) ",
-        "format-ethernet": "󰈀 Ethernet",
-        "tooltip-format": "{ifname} - {gwaddr}",
-        "format-linked": "{ifname} (No IP) ",
-        "format-disconnected": "Disconnected ⚠",
-        "format-alt": "{ipaddr}",
-        "max-length": 15
+        "tooltip-format": null,
+        "format-alt": null
     },
     "pulseaudio": {
         "scroll-step": 5,
-        "format": "{icon} {volume}% ",
+        "format": "{icon} {volume}%",
         "format-bluetooth": "{volume}% {icon} {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",
         "format-muted": " {format_source}",
@@ -103,11 +103,31 @@
             "car": "",
             "default": ["", "", ""]
         },
-        "on-click": "pavucontrol"
+        "on-click": "pavucontrol-qt"
     },
     "custom/launcher": {
         "format": "",
         "on-click": "rofi -show drun",
         "tooltip": false
+    },
+    "custom/logout": {
+        "format": "󰐥",
+        "on-click": "wlogout",
+        "tooltip": false
+    },
+    "cpu": {
+        "interval": "10",
+        "format": "{icon} {usage}% ",
+        "format-icons": ["󰾆", "󰾅", "󰓅"]
+    },
+    "temperature": {
+    "format": " {temperatureC}°C "
+    },
+    "custom/tray-icon": {
+        "format": "  ",
+        "tooltip": false
+    },
+    "memory": {
+        "format": "  {used}"
     }
 }

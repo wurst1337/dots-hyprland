@@ -1,6 +1,7 @@
-@theme "~/.config/rofi/theme.rasi"
+@theme "~/.config/rofi/matugen.rasi"
 
 configuration {
+/*	modes: "window,drun,run,ssh";*/
 font: "JetBrainsMono Nerd Font 16";
 show-icons: true;
 icon-theme: "Papirus";

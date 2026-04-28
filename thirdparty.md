@@ -14,7 +14,7 @@ In this file specified a list of third-party software, which didn't (and is) wri
 - **Hypridle, Hyprlock**, for a lock.
 
 ## Other
-Basic:
+Basic (packages name from Arch Official Repositories):
 - sddm
 - hyprland
 - hyprlock
@@ -30,12 +30,10 @@ Basic:
 - slurp
 - waybar
 - brightnessctl
-- dolphin
 - papirus-icon-theme
 - fish
 - starship
 - hyprsunset
-- cava
 - networkmanager
 - pipewire
 - wireplumber
@@ -50,6 +48,9 @@ Basic:
 - playerctl
 - libnotify
 - pavucontrol
-- firefox
 - xdg-desktop-portal-hyprland
 - ttf-jetbrains-mono-nerd
+Optional:
+- firefox (you can install any other browser, just edit it in ~/.config/hypr/hyprland/vars.conf)
+- cava (just decoration, no more)
+- dolphin (you can install any other file manager, just edit it in ~/.config/hypr/hyprland/vars.conf)

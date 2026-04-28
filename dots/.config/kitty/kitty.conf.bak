@@ -1,5 +1,6 @@
 include colors-matugen.conf
-# background #202020
+
+background #202020
 shell /usr/bin/fish
 font_family JetBrains Mono Nerd Font
 font_size 14
@@ -7,9 +8,3 @@ font_size 14
 cursor_trail 1
 
 background_opacity 0.7
-
-
-# BEGIN_KITTY_THEME
-# Noctalia
-include current-theme.conf
-# END_KITTY_THEME

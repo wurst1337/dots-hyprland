@@ -1,0 +1,15 @@
+[General]
+Name=Matugen
+ConfigName=Matugen
+
+[BackgroundNormal]
+Color={{colors.surface.default.rgb}}
+
+[ForegroundNormal]
+Color={{colors.on_surface.default.rgb}}
+
+[BackgroundActive]
+Color={{colors.primary_container.default.rgb}}
+
+[ForegroundActive]
+Color={{colors.on_primary_container.default.rgb}}

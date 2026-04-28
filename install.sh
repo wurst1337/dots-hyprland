@@ -130,6 +130,8 @@ PACMAN_PACKAGES=(
     firefox
     xdg-desktop-portal-hyprland
     ttf-jetbrains-mono-nerd
+    rofi-calc
+    matugen
 )
 
 TASKS=(
@@ -143,7 +145,7 @@ TASKS=(
 
 install_pacman_packages() {
     run_with_confirm "Update pacman database?" \
-        sudo pacman -Sy --noconfirm
+        sudo pacman -Syu --noconfirm
 
     run_with_confirm "Install packages from official repositories:\n$(printf '  %s\n' "${PACMAN_PACKAGES[@]}")" \
         sudo pacman -S --needed --noconfirm "${PACMAN_PACKAGES[@]}"

@@ -1,0 +1,38 @@
+[config]
+version_check = false
+
+[templates.qt5ct]
+input_path = "~/.config/matugen/templates/qtct.conf"
+output_path = "~/.config/qt5ct/colors/matugen.conf"
+
+[templates.qt6ct]
+input_path = "~/.config/matugen/templates/qtct.conf"
+output_path = "~/.config/qt6ct/colors/matugen.conf"
+
+[templates.kde]
+input_path = "~/.config/matugen/templates/Matugen.colors"
+output_path = "~/.local/share/color-schemes/Matugen.colors"
+
+[templates.gtk3]
+input_path = "~/.config/matugen/templates/gtk.css"
+output_path = "~/.config/gtk-3.0/gtk.css"
+
+[templates.gtk4]
+input_path = "~/.config/matugen/templates/gtk.css"
+output_path = "~/.config/gtk-4.0/gtk.css"
+
+[templates.waybar]
+input_path = '~/.config/matugen/templates/colors-waybar.css'
+output_path = '~/.config/waybar/colors-waybar.css'
+
+[templates.rofi]
+input_path = "~/.config/matugen/templates/rofi.rasi"
+output_path = "~/.config/rofi/matugen.rasi"
+
+[templates.kitty]
+input_path = "~/.config/matugen/templates/kitty.conf"
+output_path = "~/.config/kitty/colors-matugen.conf"
+
+[templates.hyprland]
+input_path = "~/.config/matugen/templates/hyprland-colors.conf"
+output_path = "~/.config/hypr/colors.conf"
