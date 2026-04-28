@@ -132,6 +132,7 @@ PACMAN_PACKAGES=(
     ttf-jetbrains-mono-nerd
     rofi-calc
     matugen
+    qt6ct
 )
 
 TASKS=(
