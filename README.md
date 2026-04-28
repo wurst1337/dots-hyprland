@@ -1,3 +1,7 @@
+**⚠️ Project is freezed, because I'm migrated on niri with noctalia-shell.**
+
+---
+
 # 「 Nicomachean dotfiles 」
 Minimalistic, slim, usable, lightweight dotfiles.
 
